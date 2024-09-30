@@ -65,10 +65,7 @@ public class playercontroller : MonoBehaviour
         {
             carryblock.transform.parent.position = carrypos.transform.position;
         }
-		if(droppreview.activeInHierarchy)
-		{
-			droppreview.GetComponent<previewoverlap>().dropPreview();
-		}
+	
 		// Vector2 droppos = droppreview.transform.localPosition;
 		// print(Physics2D.OverlapBox(droppos, new Vector2(0.5f,0.5f),0,~layermask));
 		// if(droppreview.activeInHierarchy && Physics2D.OverlapBox(droppos, new Vector2(0.5f,0.5f),0,~layermask) != null) 
@@ -119,6 +116,10 @@ public class playercontroller : MonoBehaviour
 		droppreview.transform.localPosition = new Vector3(1.5f,droppreview.transform.localPosition.y,0);
 		else if(velocity.x < 0)
 		droppreview.transform.localPosition = new Vector3(-1.5f,droppreview.transform.localPosition.y,0);
+			if(droppreview.activeInHierarchy)
+		{
+			droppreview.GetComponent<previewoverlap>().dropPreview();
+		}
     }
 	void previewpos()
 	{
