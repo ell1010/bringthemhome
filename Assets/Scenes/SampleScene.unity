@@ -326,7 +326,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe8fe51942b5bf647a92f04d8d98b31d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnedcritters: 0
   crittercap: 5
   spawndelay: 2
   critter: {fileID: 0}
@@ -656,6 +655,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2064169342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2064169344}
+  - component: {fileID: 2064169343}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2064169343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064169342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19e7fc2017e2cf4b9953e9a81b2f601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questLists:
+  - name: 
+    icon: {fileID: 0}
+    hoverText: 
+    scrollText: 
+    scrollIcon: {fileID: 0}
+    repeatable: 0
+    repeatCount: 0
+    availability: 0
+  - name: 
+    icon: {fileID: 0}
+    hoverText: 
+    scrollText: 
+    scrollIcon: {fileID: 0}
+    repeatable: 0
+    repeatCount: 0
+    availability: 1
+--- !u!4 &2064169344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064169342}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.2508473, y: -4.555084, z: 31.279718}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4398327312529943968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -801,3 +861,4 @@ SceneRoots:
   - {fileID: 4398327312529943968}
   - {fileID: 230927068}
   - {fileID: 1062719529}
+  - {fileID: 2064169344}

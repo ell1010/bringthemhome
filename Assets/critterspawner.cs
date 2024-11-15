@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class critterspawner : MonoBehaviour
 {
-	public int spawnedcritters;
+	
 	public int crittercap;
 	public float spawndelay;
 	public GameObject critter;
